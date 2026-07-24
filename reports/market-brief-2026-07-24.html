@@ -1,0 +1,694 @@
+<title>Market Brief — 24 July 2026</title>
+<style>
+  :root {
+    --bg: #0C1018;
+    --surface: #141A24;
+    --surface-raised: #1A2230;
+    --text: #D8DEE9;
+    --text-muted: #6B7A8D;
+    --text-dim: #4A5568;
+    --accent: #5B9BD5;
+    --gain: #4ADE80;
+    --loss: #F87171;
+    --commodity: #FACC15;
+    --border: #1E2A3A;
+    --border-light: #253042;
+    --tag-bg: rgba(91,155,213,0.12);
+    --tag-text: #7BB3E0;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #F5F6F8;
+      --surface: #FFFFFF;
+      --surface-raised: #F0F1F4;
+      --text: #1A1F2B;
+      --text-muted: #5A6478;
+      --text-dim: #8B95A5;
+      --accent: #2B6CB0;
+      --gain: #16A34A;
+      --loss: #DC2626;
+      --commodity: #B45309;
+      --border: #D8DCE3;
+      --border-light: #E4E7ED;
+      --tag-bg: rgba(43,108,176,0.08);
+      --tag-text: #2B6CB0;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #F5F6F8;
+    --surface: #FFFFFF;
+    --surface-raised: #F0F1F4;
+    --text: #1A1F2B;
+    --text-muted: #5A6478;
+    --text-dim: #8B95A5;
+    --accent: #2B6CB0;
+    --gain: #16A34A;
+    --loss: #DC2626;
+    --commodity: #B45309;
+    --border: #D8DCE3;
+    --border-light: #E4E7ED;
+    --tag-bg: rgba(43,108,176,0.08);
+    --tag-text: #2B6CB0;
+  }
+  :root[data-theme="dark"] {
+    --bg: #0C1018;
+    --surface: #141A24;
+    --surface-raised: #1A2230;
+    --text: #D8DEE9;
+    --text-muted: #6B7A8D;
+    --text-dim: #4A5568;
+    --accent: #5B9BD5;
+    --gain: #4ADE80;
+    --loss: #F87171;
+    --commodity: #FACC15;
+    --border: #1E2A3A;
+    --border-light: #253042;
+    --tag-bg: rgba(91,155,213,0.12);
+    --tag-text: #7BB3E0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+
+  /* Header */
+  .masthead {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .masthead-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+  }
+  .masthead h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text);
+    text-wrap: balance;
+  }
+  .masthead-time {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.4rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Index strip */
+  .index-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+  }
+  .index-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.85rem 1rem;
+  }
+  .index-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.15rem;
+  }
+  .index-value {
+    font-size: 1.15rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.3;
+  }
+  .index-change {
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .down { color: var(--loss); }
+  .up { color: var(--gain); }
+
+  /* Section headings */
+  .section-heading {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* News items */
+  .news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+  .news-item {
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .news-item:last-child { border-bottom: none; }
+  .news-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.35rem;
+  }
+  .news-tag {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--tag-text);
+    background: var(--tag-bg);
+    padding: 0.15rem 0.45rem;
+    border-radius: 3px;
+  }
+  .news-tag.oil { color: var(--commodity); background: rgba(250,204,21,0.1); }
+  :root[data-theme="light"] .news-tag.oil,
+  :root:not([data-theme]) .news-tag.oil { background: rgba(180,83,9,0.08); color: var(--commodity); }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme]) .news-tag.oil { background: rgba(180,83,9,0.08); color: var(--commodity); }
+  }
+  .news-tag.loss-tag { color: var(--loss); background: rgba(248,113,113,0.1); }
+  :root[data-theme="light"] .news-tag.loss-tag { background: rgba(220,38,38,0.06); }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme]) .news-tag.loss-tag { background: rgba(220,38,38,0.06); }
+  }
+  .news-tag.gain-tag { color: var(--gain); background: rgba(74,222,128,0.1); }
+  :root[data-theme="light"] .news-tag.gain-tag { background: rgba(22,163,74,0.06); }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme]) .news-tag.gain-tag { background: rgba(22,163,74,0.06); }
+  }
+  .news-num {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-dim);
+    font-variant-numeric: tabular-nums;
+  }
+  .news-headline {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--text);
+    margin-bottom: 0.3rem;
+    text-wrap: balance;
+  }
+  .news-takeaway {
+    font-size: 0.82rem;
+    line-height: 1.55;
+    color: var(--text-muted);
+  }
+  .news-source {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    margin-top: 0.3rem;
+  }
+
+  /* Stock table */
+  .stock-table-wrap {
+    overflow-x: auto;
+    margin-bottom: 2.5rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+  }
+  .stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-variant-numeric: tabular-nums;
+    font-size: 0.82rem;
+  }
+  .stock-table thead {
+    background: var(--surface);
+  }
+  .stock-table th {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: left;
+    padding: 0.6rem 0.9rem;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  .stock-table th:nth-child(2),
+  .stock-table td:nth-child(2) { text-align: right; }
+  .stock-table th:nth-child(3),
+  .stock-table td:nth-child(3) { text-align: right; }
+  .stock-table td {
+    padding: 0.55rem 0.9rem;
+    border-bottom: 1px solid var(--border-light);
+    white-space: nowrap;
+  }
+  .stock-table tbody tr:last-child td { border-bottom: none; }
+  .stock-table tbody tr:nth-child(odd) { background: var(--surface); }
+  .stock-table tbody tr:nth-child(even) { background: var(--bg); }
+  .stock-ticker {
+    font-weight: 700;
+    color: var(--text);
+  }
+  .stock-name {
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-left: 0.3rem;
+  }
+
+  /* Whale section */
+  .whale-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.25rem 1.25rem 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .whale-section .section-heading {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0.6rem;
+  }
+  .whale-subtitle {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  .whale-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .whale-card {
+    background: var(--surface-raised);
+    border: 1px solid var(--border-light);
+    border-radius: 5px;
+    padding: 0.75rem 0.85rem;
+  }
+  .whale-card-label {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 0.2rem;
+  }
+  .whale-card-value {
+    font-size: 1rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .whale-holdings {
+    margin-top: 0.75rem;
+  }
+  .whale-holdings h4 {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+  .whale-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 0.8rem;
+  }
+  .whale-row:last-child { border-bottom: none; }
+  .whale-row-ticker {
+    font-weight: 700;
+    color: var(--text);
+  }
+  .whale-row-name {
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-left: 0.25rem;
+  }
+  .whale-row-value {
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+  }
+  .put-tag {
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--loss);
+    background: rgba(248,113,113,0.1);
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    margin-left: 0.35rem;
+  }
+  :root[data-theme="light"] .put-tag { background: rgba(220,38,38,0.06); }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme]) .put-tag { background: rgba(220,38,38,0.06); }
+  }
+  .call-tag {
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--gain);
+    background: rgba(74,222,128,0.1);
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    margin-left: 0.35rem;
+  }
+  :root[data-theme="light"] .call-tag { background: rgba(22,163,74,0.06); }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme]) .call-tag { background: rgba(22,163,74,0.06); }
+  }
+  .long-tag {
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--tag-bg);
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    margin-left: 0.35rem;
+  }
+
+  .footer {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  @media (max-width: 540px) {
+    .page { padding: 1.5rem 1rem 3rem; }
+    .index-strip { grid-template-columns: 1fr; }
+    .whale-grid { grid-template-columns: 1fr; }
+    .masthead h1 { font-size: 1.4rem; }
+  }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="masthead-eyebrow">Daily Market Intelligence</div>
+    <h1>Market Brief &mdash; 24 July 2026</h1>
+    <div class="masthead-time">Report generated 07:18 EEST (Helsinki)</div>
+  </header>
+
+  <!-- Index Strip -->
+  <div class="index-strip">
+    <div class="index-card">
+      <div class="index-label">S&amp;P 500</div>
+      <div class="index-value">7,408.30</div>
+      <div class="index-change down">&darr; 1.21%</div>
+    </div>
+    <div class="index-card">
+      <div class="index-label">Nasdaq Composite</div>
+      <div class="index-value">25,137.69</div>
+      <div class="index-change down">&darr; 2.15%</div>
+    </div>
+    <div class="index-card">
+      <div class="index-label">Dow Jones</div>
+      <div class="index-value">51,711.65</div>
+      <div class="index-change down">&darr; 0.97% (&minus;507)</div>
+    </div>
+  </div>
+
+  <!-- Top 10 News -->
+  <h2 class="section-heading">Top 10 Market Stories</h2>
+  <div class="news-list">
+
+    <div class="news-item">
+      <div class="news-meta">
+        <span class="news-tag oil">Geopolitics / Oil</span>
+      </div>
+      <div class="news-headline">Houthis Attack Two Saudi Oil Tankers in Red Sea; Brent Tops $100</div>
+      <div class="news-takeaway">Iran-backed Houthi militants fired missiles and drones at Saudi tankers Encelia and Layla, enforcing a newly declared maritime blockade. Brent surged 7% to $100.65 and WTI jumped 6.4% to $92.36. Trump threatened &ldquo;major military punishment&rdquo; and is weighing a &ldquo;massive attack&rdquo; on Iran.</div>
+      <div class="news-source">Bloomberg &middot; Washington Post &middot; CNBC</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-meta">
+        <span class="news-tag loss-tag">Tech Earnings</span>
+      </div>
+      <div class="news-headline">Alphabet Slides 7% as 2026 CapEx Guidance Raised to ~$200B</div>
+      <div class="news-takeaway">Google beat on earnings (EPS $9.11 vs est.) and Cloud surged 82% YoY, but the company lifted full-year capex to $195B&ndash;$205B from $180B&ndash;$190B. Q2 capex alone hit $45B (+100% YoY), turning free cash flow negative for the first time in Alphabet&rsquo;s public history.</div>
+      <div class="news-source">Yahoo Finance &middot; Motley Fool &middot; Schaeffers</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-meta">
+        <span class="news-tag loss-tag">Tech Earnings</span>
+      </div>
+      <div class="news-headline">Tesla Crashes 14.5% to 11-Month Low on Earnings Miss</div>
+      <div class="news-takeaway">Tesla missed profit expectations and spooked investors with a heavy AI and robotics spending outlook. The 14.52% single-day drop dragged the Nasdaq lower. Shares closed at $319.69.</div>
+      <div class="news-source">CNBC &middot; Motley Fool &middot; Yahoo Finance</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-meta">
+        <span class="news-tag">Central Banks</span>
+      </div>
+      <div class="news-headline">ECB Holds at 2.25%; Fed Meeting 28&ndash;29 July &mdash; 89% Odds of No Change</div>
+      <div class="news-takeaway">The ECB kept rates steady amid energy-shock uncertainty. Fed Chair Kevin Warsh said inflation remains &ldquo;too high&rdquo; ahead of next week&rsquo;s FOMC decision; futures price an 89% chance the Fed holds at 3.50%&ndash;3.75%. No rate cuts expected this year.</div>
+      <div class="news-source">ECB &middot; CNBC &middot; Euronews &middot; KPMG</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-meta">
+        <span class="news-tag gain-tag">Tech Earnings</span>
+      </div>
+      <div class="news-headline">Intel Surges 6% After Hours &mdash; Revenue Beats by 12%, Fastest Growth in 15 Years</div>
+      <div class="news-takeaway">Intel reported Q2 revenue of $16.1B (+25% YoY), its fastest growth rate since ~2011, driven by AI server processor demand. EPS beat by 92%. However, the company still logged a ~$11B net loss. Stock up 163% YTD, briefly hitting $110 after hours.</div>
+      <div class="news-source">CNBC &middot; FX Leaders &middot; 24/7 Wall St.</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-meta">
+        <span class="news-tag loss-tag">Tech Earnings</span>
+      </div>
+      <div class="news-headline">IBM Posts Worst Single-Day Drop in History &mdash; Down 25%</div>
+      <div class="news-takeaway">IBM&rsquo;s Q2 earnings (adj. EPS $2.93 vs est. $3.01, revenue $17.2B vs est. $17.86B) capped a two-week slide that began with a July 14 profit warning. CEO Krishna blamed weakness in software/infrastructure as clients pivoted spending to memory chips. Worst day since Oct 1987.</div>
+      <div class="news-source">CNBC &middot; IG UK &middot; Motley Fool</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-meta">
+        <span class="news-tag oil">Commodities</span>
+      </div>
+      <div class="news-headline">Kazakhstan Suspends Crude Exports via CPC After Drone Attacks</div>
+      <div class="news-takeaway">Kazakhstan halted crude shipments through the Caspian Pipeline Consortium terminal following drone strikes, tightening global supply on top of the Red Sea disruption. The dual shock helped push Brent past $100 and oil-sensitive equities lower.</div>
+      <div class="news-source">Bloomberg &middot; Forbes Advisor &middot; Trading Economics</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-meta">
+        <span class="news-tag">Broad Market</span>
+      </div>
+      <div class="news-headline">S&amp;P 500 Posts Biggest Drop in a Month; All Three Indices Close Red</div>
+      <div class="news-takeaway">The S&amp;P 500 fell 1.21%, Nasdaq dropped 2.15%, and Dow shed 507 points &mdash; the heaviest sell-off in a month. The combination of surging oil, disappointing mega-cap tech earnings, and geopolitical risk weighed across sectors.</div>
+      <div class="news-source">CNBC &middot; FinViz &middot; Bloomberg</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-meta">
+        <span class="news-tag">AI Spending</span>
+      </div>
+      <div class="news-headline">AI CapEx Anxiety Spreads &mdash; Investors Question Return on Mega-Spend</div>
+      <div class="news-takeaway">Alphabet&rsquo;s $200B capex guidance triggered a broader debate about AI investment returns. Google Cloud&rsquo;s 82% growth shows demand, but negative free cash flow and ballooning capex across the sector have investors re-evaluating whether AI spending translates to near-term profits.</div>
+      <div class="news-source">Yahoo Finance &middot; Eastern Herald &middot; 24/7 Wall St.</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-meta">
+        <span class="news-tag loss-tag">Crypto</span>
+      </div>
+      <div class="news-headline">Bitcoin Drops Below $65K; Crypto Market Slides 1.3%</div>
+      <div class="news-takeaway">Bitcoin fell 1.8% in 24 hours to ~$64,988 as risk-off sentiment spilled from equities into crypto. The total crypto market cap dipped to $2.3 trillion. DeFi was a bright spot, rising 9.8%.</div>
+      <div class="news-source">CoinGecko &middot; CoinDesk &middot; Fortune</div>
+    </div>
+
+  </div>
+
+  <!-- Stock Price Summary -->
+  <h2 class="section-heading">Stock Price Summary</h2>
+  <div class="stock-table-wrap">
+    <table class="stock-table">
+      <thead>
+        <tr>
+          <th>Asset</th>
+          <th>Price (USD)</th>
+          <th>Change</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="stock-ticker">NVDA</span><span class="stock-name">NVIDIA</span></td>
+          <td>$208.62</td>
+          <td class="down">&minus;11.8% from 52w high</td>
+        </tr>
+        <tr>
+          <td><span class="stock-ticker">BTC</span><span class="stock-name">Bitcoin</span></td>
+          <td>$64,988</td>
+          <td class="down">&darr; 1.80% (24h)</td>
+        </tr>
+        <tr>
+          <td><span class="stock-ticker">GOOGL</span><span class="stock-name">Alphabet</span></td>
+          <td>$317.69</td>
+          <td class="down">&darr; ~7%</td>
+        </tr>
+        <tr>
+          <td><span class="stock-ticker">MSTR</span><span class="stock-name">MicroStrategy</span></td>
+          <td>$94.58</td>
+          <td class="down">Range $92.34&ndash;$99.68</td>
+        </tr>
+        <tr>
+          <td><span class="stock-ticker">META</span><span class="stock-name">Meta Platforms</span></td>
+          <td>$627.17</td>
+          <td class="down">&darr; 3.87%</td>
+        </tr>
+        <tr>
+          <td><span class="stock-ticker">WTI</span><span class="stock-name">Crude Oil</span></td>
+          <td>$92.36</td>
+          <td class="up">&uarr; 6.37%</td>
+        </tr>
+        <tr>
+          <td><span class="stock-ticker">BRENT</span><span class="stock-name">Brent Crude</span></td>
+          <td>$100.65</td>
+          <td class="up">&uarr; 7.00%</td>
+        </tr>
+        <tr>
+          <td><span class="stock-ticker">AMZN</span><span class="stock-name">Amazon</span></td>
+          <td>$233.66</td>
+          <td class="down">&mdash;</td>
+        </tr>
+        <tr>
+          <td><span class="stock-ticker">TSLA</span><span class="stock-name">Tesla</span></td>
+          <td>$319.69</td>
+          <td class="down">&darr; 14.52%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- WhaleWisdom / Situational Awareness -->
+  <div class="whale-section">
+    <h2 class="section-heading">WhaleWisdom &mdash; Situational Awareness LP</h2>
+    <div class="whale-subtitle">
+      Leopold Aschenbrenner&rsquo;s hedge fund (ex-OpenAI researcher). Q1 2026 13F filing shows the fund more than doubled to <strong>$13.68B</strong> in reported equity &amp; options exposure, up from $5.52B at year-end 2025. Strategy: massive semiconductor put hedge + concentrated long positions in AI energy infrastructure.
+    </div>
+
+    <div class="whale-grid">
+      <div class="whale-card">
+        <div class="whale-card-label">Total 13F Exposure</div>
+        <div class="whale-card-value">$13.68B</div>
+      </div>
+      <div class="whale-card">
+        <div class="whale-card-label">Put Notional (Semis)</div>
+        <div class="whale-card-value down">$8.46B</div>
+      </div>
+      <div class="whale-card">
+        <div class="whale-card-label">QoQ Growth</div>
+        <div class="whale-card-value up">+148%</div>
+      </div>
+      <div class="whale-card">
+        <div class="whale-card-label">Strategy</div>
+        <div class="whale-card-value" style="font-size:0.78rem;line-height:1.4;">Barbell: long energy infra, short semis</div>
+      </div>
+    </div>
+
+    <div class="whale-holdings">
+      <h4>Major Put Positions (Bearish Bets on Semiconductors)</h4>
+      <div class="whale-row">
+        <span><span class="whale-row-ticker">SMH</span><span class="whale-row-name">VanEck Semiconductor ETF</span><span class="put-tag">Put</span></span>
+        <span class="whale-row-value down">$2.04B</span>
+      </div>
+      <div class="whale-row">
+        <span><span class="whale-row-ticker">NVDA</span><span class="whale-row-name">NVIDIA (~9M shares notional)</span><span class="put-tag">Put</span></span>
+        <span class="whale-row-value down">$1.57B</span>
+      </div>
+      <div class="whale-row">
+        <span><span class="whale-row-ticker">AVGO</span><span class="whale-row-name">Broadcom</span><span class="put-tag">Put</span></span>
+        <span class="whale-row-value down">Disclosed</span>
+      </div>
+      <div class="whale-row">
+        <span><span class="whale-row-ticker">ORCL</span><span class="whale-row-name">Oracle</span><span class="put-tag">Put</span></span>
+        <span class="whale-row-value down">Disclosed</span>
+      </div>
+      <div class="whale-row">
+        <span><span class="whale-row-ticker">AMD</span><span class="whale-row-name">Advanced Micro Devices</span><span class="put-tag">Put</span></span>
+        <span class="whale-row-value down">Disclosed</span>
+      </div>
+      <div class="whale-row">
+        <span><span class="whale-row-ticker">TSM</span><span class="whale-row-name">Taiwan Semiconductor</span><span class="put-tag">Put</span></span>
+        <span class="whale-row-value down">Disclosed</span>
+      </div>
+      <div class="whale-row">
+        <span><span class="whale-row-ticker">INTC</span><span class="whale-row-name">Intel</span><span class="put-tag">Put</span></span>
+        <span class="whale-row-value down">Disclosed</span>
+      </div>
+      <div class="whale-row">
+        <span><span class="whale-row-ticker">MU, ASML, GLW</span><span class="whale-row-name">Micron, ASML, Corning</span><span class="put-tag">Put</span></span>
+        <span class="whale-row-value down">Disclosed</span>
+      </div>
+    </div>
+
+    <div class="whale-holdings" style="margin-top:1rem;">
+      <h4>Top Long Positions (Bullish Bets on Energy / AI Infra)</h4>
+      <div class="whale-row">
+        <span><span class="whale-row-ticker">BE</span><span class="whale-row-name">Bloom Energy (6.5M shares + 409K call options)</span><span class="long-tag">Long</span><span class="call-tag">Call</span></span>
+        <span class="whale-row-value up">$934M</span>
+      </div>
+      <div class="whale-row">
+        <span><span class="whale-row-ticker">SNDK</span><span class="whale-row-name">SanDisk</span><span class="long-tag">Long</span></span>
+        <span class="whale-row-value up">Top holding</span>
+      </div>
+      <div class="whale-row">
+        <span><span class="whale-row-ticker">CW</span><span class="whale-row-name">Coreweave</span><span class="long-tag">Long</span></span>
+        <span class="whale-row-value up">Top holding</span>
+      </div>
+      <div class="whale-row">
+        <span><span class="whale-row-ticker">IREN</span><span class="whale-row-name">Iren Limited (BTC miner &rarr; AI hosting)</span><span class="long-tag">Long</span></span>
+        <span class="whale-row-value up">Top holding</span>
+      </div>
+      <div class="whale-row">
+        <span><span class="whale-row-ticker">CORZ</span><span class="whale-row-name">Core Scientific (BTC miner &rarr; AI hosting)</span><span class="long-tag">Long</span></span>
+        <span class="whale-row-value up">Top holding</span>
+      </div>
+    </div>
+
+    <div style="margin-top:1rem;font-size:0.78rem;color:var(--text-muted);line-height:1.55;">
+      <strong>Thesis:</strong> Aschenbrenner is betting that AI&rsquo;s next bottleneck is power and physical infrastructure, not chips. The barbell combines massive put hedges against the semiconductor layer with concentrated longs in energy infrastructure and Bitcoin miners pivoting to AI data-center hosting. Not a simple anti-AI bet &mdash; it&rsquo;s a rotation-within-AI trade.
+    </div>
+  </div>
+
+  <div class="footer">
+    Data sourced from CNBC, Bloomberg, Yahoo Finance, CoinGecko, WhaleWisdom, SEC 13F filings. Prices reflect July 23 close / July 24 pre-market where noted. This report is informational only &mdash; not investment advice.
+  </div>
+
+</div>
