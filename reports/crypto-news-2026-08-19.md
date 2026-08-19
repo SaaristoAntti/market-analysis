@@ -22,8 +22,16 @@
    Bitcoin Core enters its v32 feature freeze on August 20, after which only bug fixes will be accepted. New functionality is deferred to the v33 release cycle. This signals a near-term stability push for the reference implementation.
    - [CoinStats AI](https://coinstats.app/ai/a/latest-news-for-bitcoin)
 
-3. **Key Technical Levels Hold**
-   BTC is consolidating near $64,200. Analysts identify $66,000–$67,000 as the next resistance zone that must be cleared to confirm a broader recovery trend, with firm support at $63,000. Price opened at $64,681 on Wednesday, edging up 0.3% from Tuesday's open.
+3. **Citigroup Launches Institutional Bitcoin Custody Service "Custody+"**
+   On August 18, Citigroup announced "Custody+", a new platform offering institutional clients Bitcoin key management, wallet infrastructure, and safekeeping — marking another major traditional bank entering the digital-asset custody space.
+   - [CoinStats AI](https://coinstats.app/ai/a/latest-news-for-bitcoin)
+
+4. **Digital Asset Market CLARITY Act Heads for Senate Vote September 15**
+   A critical Senate procedural vote on the Digital Asset Market CLARITY Act is scheduled for September 15, 2026. The bill aims to resolve the regulatory split between the SEC and CFTC over crypto assets.
+   - [IG UK](https://www.ig.com/uk/trading-strategies/us-crypto-bill-delay-bitcoin-etf-inflows-260810)
+
+5. **Key Technical Levels Hold; $297.5M ETF Inflows on August 17**
+   BTC consolidates near $64,200 with resistance at $66,000–$67,000. U.S. spot Bitcoin ETFs saw $297.5M net inflows on August 17, led by BlackRock's IBIT at $160.2M.
    - [Fortune](https://fortune.com/article/price-of-bitcoin-08-19-2026/) | [CoinDesk](https://www.coindesk.com/price/bitcoin)
 
 ---
@@ -50,7 +58,15 @@
    The upcoming Hegotá upgrade will introduce native privacy features and censorship resistance via enforced transaction inclusion lists, extending Ethereum's roadmap beyond Glamsterdam.
    - [Bitcoin Foundation](https://bitcoinfoundation.org/news/ethereum/major-ethereum-updates-2026/)
 
-4. **Price Target: $1,950 for August**
+4. **Bitmine Holds 4.8% of ETH Circulating Supply — $11.4B Treasury**
+   Bitmine Immersion Technologies extended its ETH accumulation on August 18, now holding 5.82 million ETH (~4.8% of circulating supply), with a combined treasury of $11.4 billion.
+   - [CoinGabbar](https://www.coingabbar.com/en/crypto-currency-news/ethereum-news-today-blackrock-tokenized-funds-bitmine-eth-buys) | [TechEdge AI](https://techedgeai.com/bitmines-ethereum-treasury-reaches-11-4-billion-as-eth-holdings-expand/)
+
+5. **Securitize Brings Neuberger's $230B Fixed-Income Platform Onchain**
+   Securitize launched a tokenized fixed-income fund (HINC) with Neuberger Berman, available on Ethereum, Avalanche, Solana, and Sui — underscoring Ethereum's role as a hub for institutional tokenized assets.
+   - [CoinMarketCap](https://coinmarketcap.com/cmc-ai/ethereum/latest-updates/)
+
+6. **Price Target: $1,950 for August**
    Analysts project ETH to test $1,950 in August 2026, with the range seen as $1,800–$2,000. Record network usage is yet to translate into a sustained price breakout.
    - [FXStreet](https://www.fxstreet.com/cryptocurrencies/news/ethereums-upcoming-updates-will-prices-finally-respond-to-record-network-usage-202603241323)
 
@@ -78,7 +94,11 @@
    Spot Solana ETFs pulled in $10.26 million last week, approximately 70× the prior week's total of ~$145K, marking the seventh consecutive week of positive net inflows. Morgan Stanley (MSOL) and Bitwise accounted for the bulk of flows. Morgan Stanley's MSOL recorded $1.43M on August 11 alone, following its July 28 launch with a 0.14% fee and 95% staking rewards passed to shareholders.
    - [Yahoo Finance](https://finance.yahoo.com/markets/crypto/articles/solana-etf-inflows-surge-70x-055308319.html) | [CryptoRank](https://cryptorank.io/news/feed/1359b-solana-etf-inflows-70x-bitwise-concentration)
 
-4. **Cash App + XRPL Native DEX Trading Go Live for SOL**
+4. **Solana Identity Protocol Shuts Down — All User Data Deleted by Year-End**
+   Solana Identity, the onchain reputation-profile protocol, announced it is shutting down all services and will permanently delete all user data before year-end. A notable contraction for Solana's identity and reputation infrastructure.
+   - [CoinDesk Solana](https://www.coindesk.com/tag/solana)
+
+5. **Cash App + XRPL Native DEX Trading Go Live for SOL**
    Over August 16–18, Cash App enabled SOL token purchases through MoonPay, and Solana's Native DEX Trading launched on XRPL, expanding distribution and liquidity access for the asset.
    - [CoinMarketCap](https://coinmarketcap.com/cmc-ai/solana/latest-updates/)
 
