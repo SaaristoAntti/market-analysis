@@ -8,14 +8,14 @@
 
 | Asset | Price (USD) | Notes |
 |-------|------------|-------|
-| NVIDIA (NVDA) | ~$227.35 | Mkt cap ~$5.48T, range $224.75–$229.07 |
+| NVIDIA (NVDA) | ~$228.45 | +$4.04 (+1.80%), confirmed Hugging Face acquisition |
 | Bitcoin (BTC) | ~$81,142 | 24h vol ~$38.9B, up ~4% this week |
-| Google/Alphabet (GOOGL) | ~$336.45 | Ex-dividend date Sep 4 ($0.22/share) |
+| Google/Alphabet (GOOGL) | ~$342.43 | +$7.41 (+2.21%), ex-div Sep 4 ($0.22) |
 | MicroStrategy (MSTR) | ~$144.82 | +14% on Sep 3, +57% in three weeks |
-| Meta (META) | ~$617.14 | +$24.24 (+4.09%) on Sep 3 |
+| Meta (META) | ~$613.88 | +$3.20 (+0.52%), released Muse Spark 1.3 AI |
 | Oil (WTI Crude) | ~$90.58/bbl | Supported by Hormuz uncertainty |
-| Amazon (AMZN) | ~$259.26 | Mkt cap ~$2.79T, P/E 20.51 |
-| Tesla (TSLA) | ~$383.17 | Day range $359.25–$384.04 |
+| Amazon (AMZN) | ~$258.21 | +$3.24 (+1.27%) |
+| Tesla (TSLA) | ~$376.37 | -$5.63 (-1.47%), only decliner in list |
 
 ---
 
@@ -57,29 +57,29 @@ Source: [CNBC — Snowflake Q2 Earnings](https://www.cnbc.com/2026/09/02/snowfla
 Broadcom beat Q3 estimates (EPS $3.32 vs. $3.24, revenue $29.59B vs. $29.36B), but Q4 guidance disappointed. The bright spot: CEO Hock Tan highlighted expanding business with Anthropic and OpenAI, and expects to deliver "tens of billions" in processors to Google annually. Shares edged up in after-hours despite the mixed guidance.
 Source: [CNBC — Broadcom Q3 Earnings](https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html)
 
-**6. MongoDB Falls 12% Despite Beating Estimates**
-MongoDB posted EPS of $1.90 vs. $1.61 expected on revenue of $772M vs. $734M expected, with upbeat guidance. Despite the beat, shares dropped 12% — reflecting elevated investor expectations and selective risk appetite in cloud/data stocks.
-Source: [Kiplinger — Earnings Calendar](https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks)
+**6. NVIDIA Confirms $12.9B Acquisition of Hugging Face**
+NVIDIA announced a definitive agreement to acquire open-source AI platform Hugging Face for $12.93B ($11.9B to shareholders + $1B employee retention). Hugging Face hosts 3M models, 1M apps used by 18M+ developers, and 500K datasets. CEO Jensen Huang pledged the platform will remain open and NVIDIA compute will not be required. Deal expected to close H1 2027, pending regulatory approval.
+Source: [TechCrunch — NVIDIA Buys Hugging Face](https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/)
 
-**7. MicroStrategy (MSTR) Rockets 57% in Three Weeks**
-Strategy Inc. surged to $144.82, up 14% on September 3 alone, driven by Bitcoin's 5% weekly rally and the company's latest 4,603 BTC purchase ($370M), bringing total holdings to ~845,050 BTC. Alliance Global initiated coverage with a Buy rating and $217 price target. A new $1.59B "USD Cash" pool was funded via $2.01B in share sales.
-Source: [Timothy Sykes — MSTR Stock](https://www.timothysykes.com/news/strategy-inc-mstr-news-2026_09_03-4/)
+**7. Dell Surges 16% on Record $95B AI Server Backlog**
+Dell reported Q2 FY2027 EPS of $7.04 vs. $4.91 expected (+203%), revenue of $46.97B (+58% YoY). AI server orders hit a record $60.9B in the quarter, with total AI backlog reaching $95B — roughly 84% of Dell's entire FY2026 revenue. The company raised FY2027 revenue guidance by $25B to $192B and now expects AI server revenue to triple to $74B.
+Source: [Motley Fool — Dell AI Backlog](https://www.fool.com/coverage/stock-market-today/2026/09/02/stock-market-today-sept-2-dell-surges-16-on-soaring-ai-backlog/)
+
+**8. Meta Releases Muse Spark 1.3 — Closes Gap with Frontier AI Labs**
+Meta launched Muse Spark 1.3, its most powerful AI model yet, scoring 62 on the Artificial Analysis Intelligence Index (behind only Claude Fable 5.1 and Opus 5). The model achieves 75.4% on DeepSWE 1.1, uses ~20% fewer tool calls and ~25% fewer tokens than its predecessor, with a 1M-token context window. API access opened to developers on a paid basis.
+Source: [Bloomberg — Meta AI Model](https://www.bloomberg.com/news/articles/2026-09-02/meta-releases-more-powerful-ai-model-edging-closer-to-rivals)
 
 ### Energy / Geopolitical
 
-**8. Oil Rises on Strait of Hormuz Uncertainty**
+**9. Oil Holds Above $90 on Strait of Hormuz Uncertainty**
 WTI crude at $90.58/bbl, supported by weakening dollar (7-week low) and uncertainty around an Iran-Oman proposal to reopen the Strait of Hormuz. The IEA has characterized the ongoing disruption as the "largest supply disruption in the history of the global oil market." Brent surged past $120/bbl earlier in 2026 after Iran's March closure of the strait.
 Source: [Forbes Advisor — Oil Prices Today](https://www.forbes.com/advisor/investing/oil-prices-today/)
 
-**9. Hewlett Packard Enterprise Slides 4% on Conservative Outlook**
-HPE guided for 16–20% earnings growth for FY ending October 2027, slightly below the 18.7% FactSet consensus. Enterprise tech spending remains cautious amid macro uncertainty, though HPE's AI server business continues to see robust demand.
-Source: [CNBC — Stock Market Sept. 3](https://www.cnbc.com/2026/09/02/stock-market-today-live-updates.html)
-
 ### Crypto / Digital Assets
 
-**10. Bitcoin Rallies Past $81,000 Amid Risk-On Sentiment**
-Bitcoin climbed to ~$81,142 as equities rallied and Treasury yields retreated. Crypto prices had tumbled earlier in the week on Iran war escalation fears but recovered sharply. Strategy's resumed BTC buying, institutional 13F demand signals, and easing rate-hike concerns are supporting prices. 24h trading volume surged to ~$39B.
-Source: [Fortune — Bitcoin Price September 3](https://fortune.com/article/price-of-bitcoin-09-03-2026/)
+**10. MicroStrategy Rockets 57% in Three Weeks as Bitcoin Tops $81K**
+Strategy Inc. surged to $144.82, up 14% on September 3 alone, driven by Bitcoin's rally past $81,000 (+5% weekly) and the company's latest 4,603 BTC purchase ($370M), bringing total holdings to ~845,050 BTC (~4% of total supply). Alliance Global initiated coverage with a Buy/$217 target. Bitcoin recovery supported by easing rate-hike fears and resumed institutional buying after Iran-related tumble earlier in the week.
+Source: [Timothy Sykes — MSTR](https://www.timothysykes.com/news/strategy-inc-mstr-news-2026_09_03-4/) | [Fortune — BTC](https://fortune.com/article/price-of-bitcoin-09-03-2026/)
 
 ---
 
