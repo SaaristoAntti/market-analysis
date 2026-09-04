@@ -27,13 +27,18 @@
    - Bitcoin opened at $81,271.92 on September 4 — its highest opening since May 12, 2026 — reflecting growing confidence among traders ahead of the nonfarm payrolls report due tonight.
    - Source: [CoinStats AI](https://coinstats.app/ai/a/latest-news-for-bitcoin)
 
-4. **Nonfarm Payrolls in Focus as Next Catalyst**
+4. **IMF Confirms El Salvador's Bitcoin Reserves Were Privately Funded**
+   - The IMF confirmed today that El Salvador's 1,796-BTC addition since June 2025 was privately funded, not public money. The country now holds 7,764 BTC total with an unrealized gain of ~$239M. The IMF also released the next $140M loan tranche as part of the country's ongoing agreement.
+   - Source: [CoinDesk](https://www.coindesk.com/business/2026/09/04/imf-confirms-el-salvador-s-bitcoin-growth-was-funded-by-private-donations-not-public-money)
+
+5. **Nonfarm Payrolls in Focus as Next Catalyst**
    - With spot liquidity improving, traders are watching tonight's U.S. nonfarm payrolls print as the key data point to determine whether the current BTC rebound can become a sustained trend.
    - Source: [Yahoo Finance](https://finance.yahoo.com/markets/crypto/articles/bitcoin-etfs-post-best-day-155446523.html)
 
 ### On-Chain / Market Events
 - More than $440M in crypto short positions were liquidated in the 24h following Waller's comments.
-- BTC ETF inflow momentum is the strongest since Q1 2026.
+- BTC ETF inflow momentum is the strongest since Q1 2026. August 2026 was the best ETF month of the year with $3.52B in net inflows.
+- Derivatives sentiment is cooling; short bias is building in the $82K–$86K resistance band.
 
 ---
 
@@ -56,11 +61,19 @@
    - On September 2, Robinhood's Ethereum Layer-2 chain saw DEX trading volume hit $1.3 billion, signalling robust speculative activity and fee generation on Ethereum-based infrastructure.
    - Source: [BeInCrypto](https://beincrypto.com/ethereum-price-september-outlook-2026/)
 
-3. **Whale Opens $102.3M 10x Long Position**
+3. **BlackRock Files 1-for-3 Reverse Split on ETHA ETF**
+   - BlackRock filed for a 1-for-3 reverse share split on its $5.2B spot Ethereum ETF (ETHA), effective October 6. The move is designed to compress the bid-ask spread from ~7bps to ~2bps, making the ETF more attractive to institutional investors through tighter pricing.
+   - Source: [The Block](https://www.theblock.co/post/410663/blackrocks-spot-ethereum-etf-to-undergo-1-for-3-reverse-share-split-in-october)
+
+4. **Hegotá Hard Fork Confirms FOCIL (EIP-7805) as Key Feature**
+   - Ethereum developers confirmed that the upcoming Hegotá hard fork (targeting late 2026 / Q1 2027) will include FOCIL — a censorship-resistance mechanism that forces block builders to include transactions from public inclusion lists or face block rejection. It's the sole confirmed feature so far.
+   - Source: [Decrypt](https://decrypt.co/375787/ethereum-developers-privacy-hegota-upgrade) | [Bankless](https://www.bankless.com/read/focil-ethereum-censorship-resistance)
+
+5. **Whale Opens $102.3M 10x Long Position**
    - A large on-chain participant opened a 10x leveraged long position in Ethereum worth $102.3 million, with a liquidation price at $2,241. The move adds bullish conviction signals to the market amid recovering prices.
    - Source: [CoinMarketCap](https://coinmarketcap.com/cmc-ai/ethereum/latest-updates/)
 
-4. **ETH Prints First Higher High of This Cycle**
+6. **ETH Prints First Higher High of This Cycle**
    - Ethereum entered September having just printed its first higher high of the current cycle. The $2,438 Fibonacci level is now a key technical battleground determining whether the August breakout survives into Q4.
    - Source: [BeInCrypto](https://beincrypto.com/ethereum-price-september-outlook-2026/)
 
@@ -85,13 +98,13 @@
    - The SEC issued a new Nasdaq order clearing Solana alongside XRP, marking a significant positive regulatory development. This removes a key overhang for institutional adoption of SOL.
    - Source: [U.Today](https://u.today/xrp-and-solana-cleared-in-fresh-sec-nasdaq-order-main-crypto-news-this-morning)
 
-2. **Transaction V1 Upgrade Scheduled for September 9**
-   - Solana's Transaction V1 upgrade is set to launch on September 9, 2026. It increases maximum transaction size to support ZK proofs and cross-chain functionality, a major step toward interoperability with other blockchain ecosystems.
-   - Source: [crypto.news](https://crypto.news/the-most-important-solana-news-in-2026-transaction-v1-alpenglow-and-how-miners-can-earn-100-sol-per-month/)
+2. **Transaction V1 Upgrade Hits Mainnet September 9**
+   - Solana's Transaction V1 upgrade launches on September 9. It expands maximum transaction size from 1,232 to 4,096 bytes, enabling ZK proof support and cross-chain functionality. A 90% phased rent reduction also begins with this release, meaningfully lowering on-chain storage costs for developers.
+   - Source: [Solana Compass](https://solanacompass.com/news/anza-developer-sets-mainnet-dates-transaction-v1-september-9-rent-reduction-this-week-alpenglow-in-october) | [crypto.news](https://crypto.news/the-most-important-solana-news-in-2026-transaction-v1-alpenglow-and-how-miners-can-earn-100-sol-per-month/)
 
-3. **Alpenglow Consensus Upgrade Expected in October**
-   - The Alpenglow mainnet upgrade is targeting an October 2026 launch. It aims to achieve **block finality in ~100–150 milliseconds**, a dramatic improvement that would make Solana one of the fastest finalizing blockchains in existence.
-   - Source: [Bitcoin Foundation](https://bitcoinfoundation.org/news/altcoins/top-solana-updates-in-2026-network-upgrades-ecosystem-growth-and-institutional-adoption-trends/) | [crypto.news](https://crypto.news/the-most-important-solana-news-in-2026-transaction-v1-alpenglow-and-how-miners-can-earn-100-sol-per-month/)
+3. **Alpenglow Consensus Upgrade Slips to October (Agave 4.3)**
+   - The Alpenglow mainnet upgrade — which replaces TowerBFT and targets **block finality in ~150ms** vs. the current ~12.8 seconds — has been pushed from September to October, shipping with Agave client version 4.3. Once live, it would make Solana among the fastest-finalizing blockchains.
+   - Source: [Solana Compass](https://solanacompass.com/news/anza-developer-sets-mainnet-dates-transaction-v1-september-9-rent-reduction-this-week-alpenglow-in-october) | [crypto.news](https://crypto.news/the-most-important-solana-news-in-2026-transaction-v1-alpenglow-and-how-miners-can-earn-100-sol-per-month/)
 
 4. **Block Time Reduced from 400ms to 350ms in August**
    - Solana achieved its first-ever block creation speed boost in August 2026, cutting block time from 400ms to 350ms. This is a stepping stone ahead of the more dramatic Alpenglow improvement.
