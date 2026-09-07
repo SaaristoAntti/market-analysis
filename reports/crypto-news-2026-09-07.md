@@ -2,6 +2,8 @@
 
 **Report generated:** 2026-09-07 11:00 EEST (Helsinki)
 
+> **Note:** U.S. markets are closed today (Monday, September 7) for Labor Day. Prices reflect Friday September 4/5 closing data. Asia-Pacific markets are open and rallying — Nikkei +2%, Kospi +3%.
+
 ---
 
 ## Stock Price Summary
@@ -41,10 +43,10 @@ Oil surged nearly 9% for the week as renewed U.S.-Iran hostilities in the Strait
 
 ### Central Banks & Macro
 
-**2. Fed Rate Decision on Knife's Edge Ahead of September 16 Meeting**
-CME FedWatch puts odds of a quarter-point hike at ~60% vs. 40% for a hold. Three policymakers already preferred a hike at the July meeting (rate held at 3.50%-3.75%). Key data ahead: producer inflation Sept 10, CPI Sept 11.
-- **Key takeaway:** The hottest payrolls report since early 2026 has shifted the debate from "when to cut" to "whether to hike."
-- **Source:** [TastyFX Central Bank Watchlist](https://www.tastyfx.com/news/central-bank-watchlist-september-2026-meeting-expectations/)
+**2. August Jobs Report Blows Past Expectations — Rate Hike Odds Surge**
+Nonfarm payrolls surged by 162,000 in August, tripling the 53,000 forecast. Unemployment held at 4.1%, and average hourly earnings rose 0.3% to $37.75. The hot labor data immediately boosted rate-hike probabilities for the September 15-16 FOMC meeting.
+- **Key takeaway:** CME FedWatch now puts odds of a 25bp hike at ~58%. Three policymakers already preferred a hike at the July meeting (rate held at 3.50%-3.75%). Key data ahead: PPI Sept 10, CPI Sept 11.
+- **Source:** [CNBC](https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html), [UPI](https://www.upi.com/Top_News/US/2026/09/04/nonfarm-payrolls-bureau-labor-statistics-august-2026/8801788532242/)
 
 **3. ECB Expected to Raise Rates Again at September 10 Meeting**
 The ECB is widely expected to deliver another rate increase at its September 10 meeting. A surprise hold would be the clearest dovish signal and could force a significant repricing of the European rate outlook.
