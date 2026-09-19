@@ -7,10 +7,11 @@
 ## Bitcoin (BTC)
 
 ### Price
-- **Current price:** $81,282.55
-- **24h change:** +3.88%
+- **Current price:** $81,395.92
+- **24h change:** +3.88% (24h range: $77,400–$81,700)
 - **Key levels:** Support $80,814.69 · Resistance $81,711.11
 - **EMA structure:** Bullish — price above 20-EMA ($77,633), 50-EMA ($74,269), and 200-EMA ($72,424)
+- **Note:** BTC all-time high remains $126,210 (Oct 6, 2025); current price is ~35% below ATH
 
 ### Top News
 
@@ -44,15 +45,19 @@
 ## Ethereum (ETH)
 
 ### Price
-- **Current price:** $2,639.85
-- **24h change:** +5.09% (outperforming BTC on the day)
+- **Current price:** $2,641.81
+- **24h change:** +8.4% (24h range: $2,435.96–$2,643.34; near top of daily range)
 - **24h trading volume:** ~$19.8 billion
 - **Gas fees:** 0.21–0.30 Gwei (multi-year lows)
 
 ### Top News
 
-1. **ETH Outperforms BTC — Driven by Tokenization Narrative and CFTC Move**
-   Ethereum rose 5.09% to $2,639.85, outpacing Bitcoin's 3.88% gain. The CFTC bypassing Congress with its own crypto rulebook removes a key institutional bottleneck, and ETH remains the primary settlement layer for tokenized equity experiments following the SEC's September 17 Innovation Exemption for tokenized securities venues.
+1. **Glamsterdam Hard Fork Targets Sepolia Testnet October 6 — Biggest Protocol Upgrade Since The Merge**
+   The Ethereum Glamsterdam hard fork is scheduled to activate on the Sepolia testnet on October 6, 2026 at 13:53 UTC. Client software deadline is September 29. Core features include Enshrined Proposer-Builder Separation (ePBS) and parallel execution via block-level access lists — targeting the first major base-layer throughput improvement since The Merge. One developer raised a cheap-builder attack risk on testnet liveness that is being monitored.
+   Source: [CoinOtag](https://en.coinotag.com/ethereum-glamsterdam-sepolia-oct-6-activation-target) · [BigGo Finance](https://finance.biggo.com/news/fff99f04-5507-4426-bd6f-f63359070bd4)
+
+2. **ETH Outperforms BTC — Regulatory Tailwinds + Glamsterdam Anticipation**
+   Ethereum rose 8.4% to $2,641.81 today, double Bitcoin's 3.88% gain. The combination of the CFTC's rulemaking filing, the SEC Innovation Exemption for tokenized stocks, and growing anticipation of the Glamsterdam throughput upgrade are converging to drive institutional ETH positioning.
    Source: [Paragraph / CryptoBuyingTips](https://paragraph.com/@cryptobuyingtips/crypto-market-overview-leveraged-bets-drive-gains-amid-diverging-us-regulatory-paths-september-19-2026)
 
 2. **Gas Fees at 0.21–0.30 Gwei — Price Rally Not Backed by On-Chain Activity**
@@ -67,13 +72,18 @@
    Technical analysts highlight ETH's EMA stack as firmly bullish, with the $2,620–$2,660 zone as near-term resistance per prediction market pricing (Sep 19 5pm EDT bracket). If ETH holds above $2,600, the next target is the $2,750–$2,800 range seen earlier in 2026.
    Source: [CryptoRank.io](https://cryptorank.io/news/feed/bf7c2-ethereum-price-september-outlook-2026) · [Robinhood Prediction Markets](https://robinhood.com/us/en/prediction-markets/crypto/events/eth-price-range-on-sep-19-2026-at-5pm-edt-sep-18-2026/)
 
-5. **ETF Outflow Reversal — $593M Drawdown Earlier in Week Now Recovering**
+5. **Frame Transactions (Post-Glamsterdam) — Gas Fees in USDC Coming Late 2026**
+   Following Glamsterdam, the Ethereum roadmap targets native account abstraction via "Frame Transactions," enabling users to pay gas fees in USDC or other ERC-20 tokens. Expected late 2026 to 2027, this is expected to dramatically lower the UX barrier for non-ETH-native users and new institutional products.
+   Source: [Bitcoin Foundation / ETH Updates 2026](https://bitcoinfoundation.org/news/altcoins/ethereum-updates-2026-upcoming-changes-that-could-transform-the-network/)
+
+6. **ETF Outflow Reversal — $593M Drawdown Earlier in Week Now Recovering**
    Combined BTC/ETH/XRP ETF outflows of ~$593 million on September 16 (heaviest since June, triggered by CLARITY failure + Fed hike) have begun reversing as prices recover. Spot ETH ETFs saw $366M exit in two days but institutional flows are stabilizing as the CFTC regulatory path becomes clearer.
    Source: [The Block](https://www.theblock.co/)
 
 ### On-Chain / Market Events
 - ETH volume at ~$19.8B/day indicates elevated institutional trading despite muted on-chain gas activity.
 - Ultra-low gas fees (0.21–0.30 Gwei) suggest L2 migration is absorbing retail transaction load, with mainnet increasingly used for high-value settlement.
+- Glamsterdam testnet activation October 6 is the next major protocol milestone — ePBS and parallel execution could structurally improve ETH's competitive position.
 - Ethereum remains the frontrunner for on-chain equity settlement infrastructure following SEC roundtable discussions.
 
 ---
@@ -81,36 +91,46 @@
 ## Solana (SOL)
 
 ### Price
-- **Current price:** $111.79
-- **24h change:** ~+6.3% (from ~$105 range; 24h low $109.44, 24h high $114.14)
+- **Current price:** $111.87
+- **24h change:** +11.59% (24h range: $99.40–$113.47) — **7-month high**
 - **Market cap:** ~$65.65B (#7 by market cap)
 - **Key resistance:** $114–$120 zone
 
 ### Top News
 
-1. **SIMD-0525 Stage 4 Activated — Slot Time Drops to 250ms at Epoch 1037**
-   On September 18, Solana activated the fourth stage of its SIMD-0525 upgrade, reducing target slot time from 300ms to 250ms (4 slots/second, up from ~3.3). This is stage 4 of 5 in a staircase from 400ms down to a 200ms target. The upgrade increases block production frequency by ~17% without changing per-slot transaction capacity. Stage 5 (200ms) remains ahead.
-   Source: [Solana Compass](https://solanacompass.com/news/solana-activates-250ms-slot-time-at-epoch-1037-fourth-step-of-simd-0525) · [Crypto Briefing](https://cryptobriefing.com/solana-reduces-block-times-250-milliseconds/) · [CryptoTicker](https://cryptoticker.io/en/solana-slot-time-250-milliseconds-check/)
+1. **$47.6M SOL ETF Inflows on September 18 — Best Single Day of the Month**
+   Spot Solana ETFs drew $47.6 million in net inflows on September 18, the strongest single-day inflow of September. This surge directly drove SOL to a 7-month price high. ETF holdings now sit near an all-time high of ~10.58 million SOL, continuing a 10-week inflow streak. Staking-integrated ETFs (21Shares, VanEck) are passing ~7% APY to investors.
+   Source: [CoinGabbar](https://www.coingabbar.com/en/solana-sol-price-hits-7-month-high-after-47-6m-etf-inflows-surge)
 
-2. **Alpenglow Consensus Upgrade Delayed to October — Votor + Rotor Replace Tower BFT**
+2. **SIMD-0525 Stage 4 Activated — Slot Time Drops to 250ms at Epoch 1037**
+   On September 18, Solana activated the fourth stage of its SIMD-0525 upgrade, reducing target slot time from 300ms to 250ms (4 slots/second, up from ~3.3). This is stage 4 of 5 in a staircase from 400ms down to a 200ms target. The upgrade increases block production frequency by ~17% without changing per-slot transaction capacity. Stage 5 (200ms) remains ahead.
+   Source: [Solana Compass](https://solanacompass.com/news/solana-activates-250ms-slot-time-at-epoch-1037-fourth-step-of-simd-0525) · [Crypto Briefing](https://cryptobriefing.com/solana-reduces-block-times-250-milliseconds/) · [CoinMarketCap](https://coinmarketcap.com/top-stories/6aad6f2418d5f96e3a161d8a/)
+
+3. **Transaction V1 Live — Max Transaction Size Tripled to 4,096 Bytes**
+   Solana's new Transaction V1 format is now live on mainnet, tripling maximum transaction size from 1,232 to 4,096 bytes. This enables ZK proofs, complex DeFi operations, and more sophisticated smart contract interactions to fit within a single transaction — a major capability unlock for developers building advanced applications.
+   Source: [CryptoTicker](https://cryptoticker.io/en/solana-transaction-format-v1-upgrade-september/)
+
+4. **Alpenglow Consensus Upgrade Delayed to October — Votor + Rotor Replace Tower BFT**
    Solana's landmark Alpenglow upgrade — replacing Proof of History and Tower BFT with the new Votor (voting) and Rotor (block propagation) protocols — has been delayed from September to October 2026 with the Agave v4.3 release. Alpenglow targets 100–150ms finality (down from ~12.8 seconds) and eliminates the ~75% of block space currently consumed by on-chain vote transactions, freeing massive capacity for user transactions.
    Source: [247 Wall St](https://247wallst.com/investing/cryptocurrency/2026/09/08/solana-activates-transaction-v1-on-september-9-with-alpenglow-following-in-october-what-actually-changes/) · [Pluang](https://pluang.com/en/news-feed/solana-pembaruan-alpenglow-target-finalitas-150ms-oktober)
 
-3. **SEC Innovation Exemption Enables Tokenized Stock Trading on Solana**
+5. **SEC Innovation Exemption Enables Tokenized Stock Trading on Solana**
    The SEC's September 17 Innovation Exemption grants tokenized securities venues (TSVs) temporary relief from the legal definition of an exchange, allowing tokenized NMS stocks to trade through permissioned automated market maker pools. Solana currently leads Bitcoin and Ethereum in tokenized equity volume per SEC roundtable discussions, positioning it as a primary beneficiary.
    Source: [CoinGabbar](https://www.coingabbar.com/en/solana-news-sec-exemption-etf-record-update) · [CoinSpeaker](https://partners.coinspeaker.com/solanas-technical-leap-how-simd-0525-and-high-speed-execution-are-reshaping-the-cross-chain-landscape/)
 
-4. **SOL Spot ETF Holdings Near All-Time High — 10-Week Inflow Streak Continues**
-   Solana spot ETF holdings remain near the recent all-time high of 10.58 million SOL reached on September 17, roughly double early-2026 levels. The 10-week consecutive inflow streak ($193M last month alone) continues as staking-integrated ETFs from 21Shares and VanEck pass ~7% APY to investors.
-   Source: [Yahoo Finance / SOL](https://finance.yahoo.com/markets/crypto/articles/solana-sol-eyes-rally-120-224703639.html) · [CoinMarketCap AI](https://coinmarketcap.com/cmc-ai/solana/latest-updates/)
+6. **Developer Releases: Agave v4.4.0-alpha.4 and Firedancer Testnet v26.09.3**
+   The September 18 Solana changelog included Agave v4.4.0-alpha.4 and Firedancer testnet v26.09.3. These releases advance the two parallel validator client implementations ahead of the Alpenglow mainnet launch in October, and continue stress-testing Firedancer's performance under production-like conditions.
+   Source: [Solana Changelog Sep 18](https://solana.com/news/solana-changelog-september-18-2026)
 
-5. **Technical Outlook: SOL Targets $120 After Breakout from $102–$110 Range**
+7. **Technical Outlook: SOL Targets $120 After Breakout from $102–$110 Range**
    SOL broke above its $102–$110 consolidation range this week, with all major EMAs (20, 50, 200) in a bullish stack. Key resistance sits at $114–$120; a breakout above $114.14 (today's high) could accelerate a move toward the $120 target. Analysts flag slight overbought momentum on lower timeframes, suggesting possible consolidation before the next leg higher.
    Source: [Cryptonomist](https://en.cryptonomist.ch/2026/09/18/solana-price-today-analysis-bullish-106-resistance/) · [Yahoo Finance](https://finance.yahoo.com/markets/crypto/articles/solana-sol-eyes-rally-120-224703639.html)
 
 ### On-Chain / Market Events
+- SOL hit a 7-month price high today driven by $47.6M in ETF inflows on September 18 — the best single day of the month.
 - SIMD-0525 Stage 4 (250ms slots) went live at epoch 1037 on September 18 — the network now produces 4 blocks/second.
-- Alpenglow (October launch) will eliminate vote transaction overhead and reduce finality by ~99%, which could be transformative for SOL throughput and fee economics.
+- Transaction V1 live on mainnet: 4,096-byte max transaction size unlocks ZK proofs and complex DeFi ops in a single tx.
+- Alpenglow (October launch) will eliminate vote transaction overhead (~75% of current block space) and reduce finality by ~99%.
 - SEC commodity trust recognition + Innovation Exemption removes two major regulatory overhangs for the Solana ecosystem.
 - SOL ETF holdings near ATH at ~10.58M SOL; staking ETFs generating ~7% APY for retail investors.
 
@@ -120,12 +140,12 @@
 
 | Asset | Price | 24h Change |
 |-------|-------|------------|
-| BTC | $81,282.55 | +3.88% |
-| ETH | $2,639.85 | +5.09% |
-| SOL | $111.79 | ~+6.3% |
+| BTC | $81,395.92 | +3.88% |
+| ETH | $2,641.81 | +8.4% |
+| SOL | $111.87 | +11.59% (7-month high) |
 | **Total Market Cap** | **$2.86T** | **+5.2%** |
 
-**Key theme of the day:** The market is rallying on regulatory optimism, specifically the CFTC filing its own crypto rulebook with the White House after the CLARITY Act's Senate failure — effectively bypassing legislative gridlock. All three assets are gaining, with ETH and SOL outperforming BTC. Solana benefits additionally from SIMD-0525 Stage 4 going live and the SEC's Innovation Exemption for tokenized securities. The main risk is extreme leverage (derivatives volume 9× spot), which could amplify a reversal. The Alpenglow upgrade delay to October removes a short-term catalyst for SOL but leaves a major positive ahead.
+**Key theme of the day:** The market is rallying on dual regulatory catalysts — the CFTC filing its own crypto rulebook with the White House after the CLARITY Act's Senate failure, and the SEC's Innovation Exemption for tokenized securities. All three assets are gaining, with SOL leading (+11.59%) on the combination of a $47.6M ETF inflow day and dual on-chain upgrades (250ms slot times + Transaction V1). ETH (+8.4%) is pricing in Glamsterdam hard fork anticipation. BTC (+3.88%) shows resilience but underperforms on the altcoin rotation day. The main risk is extreme leverage (derivatives volume 9× spot), which could amplify a reversal if macro headwinds re-emerge.
 
 ---
 
